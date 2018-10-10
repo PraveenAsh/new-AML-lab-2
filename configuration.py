@@ -13,10 +13,11 @@ class Config():
 		self.VALIDATION_SPLIT = 0.1
 		self.TEST_SPLIT = 0.1
 		self.RNG_SEED = 13371447
-		self.NB_EPOCHS = 25
+		self.NB_EPOCHS = 500
 		self.DROPOUT = 0.1
 		self.BATCH_SIZE = 32
 		self.MODEL_WEIGHTS_FILE = os.path.join('models', 'modelsquestion_pairs_weights.h5')
+		self.ENABLE_GPU = False
 
 if __name__ == '__main__':
 	config = Config()
